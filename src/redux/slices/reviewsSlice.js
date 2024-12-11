@@ -2,11 +2,13 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const reviewsSlice = createSlice({
     name: 'reviews',
+
     initialState: {
         data: [],
         filters: {
             platform: '',
             ratingRange: [0, 5],
+            searchText: "",
         },
         sortBy: {
             field: 'date',

@@ -6,8 +6,8 @@
 
     padding: 20px;
 
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(12, 62, 188, 0.1);
 }
 
 .filters_container h3 {

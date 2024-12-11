@@ -8,6 +8,14 @@ const Filters = ({ onFilterChange, onSortChange }) => {
   return (
     <div className={styles.filters_container}>
 
+      <div className={styles.filters_container_partSearch}>
+        <Form.Control
+          type="text"
+          placeholder="Поиск по тексту"
+          onChange={e => onFilterChange({ searchText: e.target.value })}
+        />
+      </div>
+
       <div className={styles.filters_container_partFilter}>
         <h3>Фильтровать по:</h3>
 

@@ -9,6 +9,13 @@ const filterAndSortReviews = (reviews, filters, sortBy) => {
                 return false;
             }
 
+            if (
+                filters.searchText &&
+                !review.text.toLowerCase().includes(filters.searchText.toLowerCase())
+            ) {
+                return false;
+            }
+
             return true;
         });
 
